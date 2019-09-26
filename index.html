@@ -41,56 +41,54 @@
         <div class="card text-center tarjeta">
           <img class="card-img-top" src="img/logo.png" alt="Card image cap">
           <div class="card-body">
-            <p class="small">Inicie sesión para continuar</p>
-            <hr>
             <form method="post" name=form action="portada.html">
+              <p>Inicie sesión para continuar</p>
               <div class="form-group">
                 <input id="username" class="form-control" placeholder="E-mail o Usuario" type="text" required>
-                <br>
                 <input id="password" class="form-control" placeholder="*********" type="password" required>
                 <br>
-                <a id="google-button" class="btn btn-block btn-social btn-google">
-                  <i class="fa fa-google"></i> Continuar con Google
-                </a>
-                <br>
-                <a id="facebook-button" class="btn btn-block btn-social btn-facebook">
-                  <i class="fa fa-facebook"></i> Continuar con Facebook
-                </a>
+                <input type="button" value="Ingresar" class="btn btn-pink" onclick="login()" />
               </div>
-              <hr>
-              <input type="button" value="Ingresar" class="btn btn-pink btn-lg" onclick="login()" />
-              <br><br>
-              <div class="g-signin2" data-onsuccess="onSignIn"></div>
               <a data-toggle="modal" href="#forgotPassword">¿Olvido su contraseña?</a>
             </form>
+            <hr>
+            <a id="google-button" class="btn btn-block btn-social btn-google">
+              <i class="fa fa-google"></i> Continuar con Google
+            </a>
+            <a id="facebook-button" class="btn btn-block btn-social btn-facebook">
+              <i class="fa fa-facebook"></i> Continuar con Facebook
+            </a>
           </div>
+          </form>
         </div>
       </div>
     </div>
   </div>
+  </div>
   <div class="modal fade" id="forgotPassword" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
     aria-hidden="true">
     <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h4 class="modal-title" id="exampleModalLabel">Ingrese su E-mail para recuperar su contraseña</h4>
-                <button type="submit" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <form>
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Direccion de E-mail" id="recipient-name">
-                    </div>
-                </form>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-pink" data-dismiss="modal">Cancelar</button>
-                <button type="button" class="btn btn-pink">Enviar</button>
-            </div>
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="exampleModalLabel">Ingrese su E-mail para recuperar su contraseña</h4>
+          <button type="submit" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
         </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Direccion de E-mail" id="recipient-name">
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-pink" data-dismiss="modal">Cancelar</button>
+          <button type="button" class="btn btn-pink">Enviar</button>
+        </div>
+      </div>
     </div>
-</div>
+  </div>
 </body>
+
 </html>

@@ -43,10 +43,10 @@ function showProductsList(array) {
                                 <img width="30%" hspace="20" class="rounded float-left img-thumbnail" src="` + product.imgSrc + `">
                             </div>
                             <div>
-                                <h4>` + product.name + `</h4>
+                                <h2>` + product.name + `</h2>
                             </div>
                             <div class="text-right">
-                                <h5>` + product.currency + ` ` + product.cost + `</h5>
+                                <h4>` + product.currency + ` ` + product.cost + `</h4>
                             </div>
                             <div>
                                 <small class="text-muted">` + product.soldCount + ` artículos vendidos</small>
@@ -55,7 +55,10 @@ function showProductsList(array) {
                             </div>
                         </div>
                         <div class="card-footer">
-                            <center><button type="button" class="btn btn-light btn-block"><strong> Agregar a Carrito </strong> </button></center>
+                        <center>
+                            <button type="button" class="btn btn-block">
+                               <span class="glyphicon glyphicon-shopping-cart"></span> Agregar a Carrito
+                            </button></center>
                         </div>
                     </div>
                 </div>
